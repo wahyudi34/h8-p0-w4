@@ -1,9 +1,13 @@
 function angkaPrima(angka) {
-    for(i = 2; i < angka; i++){
-        if(angka % i === 0){
-            return false;
-        }
-    }  
+    if(angka === 1) {
+        return false
+    } else {
+        for(i = 2; i < angka; i++){
+            if(angka % i === 0){
+                return false;
+            }
+        } 
+    } 
     return true
 }
   
